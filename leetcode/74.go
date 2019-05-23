@@ -1,6 +1,6 @@
 package leetcode
 
-import "code/jz"
+import "algorithm/jz"
 
 // 74. Search a 2D Matrix
 func Find(nums [][]int, target int) bool {

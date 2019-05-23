@@ -1,6 +1,6 @@
 package leetcode
 
-import "code/jz"
+import "algorithm/jz"
 
 // 105. Construct Binary Tree from Preorder and Inorder Traversal
 func ReConstructBinaryTree(preOrder, midOrder []int) *jz.TreeNode {
