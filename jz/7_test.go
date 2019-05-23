@@ -77,7 +77,7 @@ func TestReConstructBinaryTree(t *testing.T) {
 
 	for _, value := range tests {
 		if result := ReConstructBinaryTree(value.test[0], value.test[1]); !reflect.DeepEqual(result, value.want) {
-			t.Errorf("printListFromTailToHead failed, test: %v, result: %s, want: %s", value.test, result.String(), value.want.String())
+			t.Errorf("ReConstructBinaryTree failed, test: %v, result: %s, want: %s", value.test, result.String(), value.want.String())
 		}
 	}
 }
