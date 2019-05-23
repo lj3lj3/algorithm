@@ -30,11 +30,20 @@ func TestFind(t *testing.T) {
 			target: 20,
 			want:   false,
 		},
+		{
+			test: [][]int{
+				{1, 3, 5, 7},
+				{10, 11, 16, 20},
+				{23, 30, 34, 50},
+			},
+			target: 3,
+			want:   true,
+		},
 	}
 
 	for _, value := range tests {
-		if result := find(value.test, value.target); result != value.want {
-			t.Errorf("find failed, test: %v, target: %d, result: %t, want: %t", value.test, value.target, result, value.want)
+		if result := Find(value.test, value.target); result != value.want {
+			t.Errorf("Find failed, test: %v, target: %d, result: %t, want: %t", value.test, value.target, result, value.want)
 		}
 	}
 }

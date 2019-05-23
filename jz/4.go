@@ -17,32 +17,36 @@ package jz
 //Given target = 20, return false.
 //
 // 从右上角开始 左边的比它小 下边的比它大
-func find(nums [][]int, target int) bool {
-	// find target in the numbers
-	x, y := len(nums[0])-1, 0
+func Find(nums [][]int, target int) bool {
+	if len(nums) == 0 || len(nums[0]) == 0 {
+		return false
+	}
+
+	// Find target in the numbers
+	col, row := len(nums[0])-1, 0
 	// check if it is less than first item
 	if target < nums[0][0] {
 		return false
 	}
 	// check if it is bigger than last item
-	if target > nums[len(nums)-1][x] {
+	if target > nums[len(nums)-1][col] {
 		return false
 	}
 	// in the square
 	lastRow := len(nums) - 1
 	for {
 		// check this point
-		if x < 0 || y > lastRow {
+		if col < 0 || row > lastRow {
 			// not found
 			return false
-		} else if target == nums[x][y] {
+		} else if target == nums[row][col] {
 			return true // found
-		} else if target > nums[x][y] {
+		} else if target > nums[row][col] {
 			// move down
-			y++
-		} else if target < nums[x][y] {
+			row++
+		} else if target < nums[row][col] {
 			// move left
-			x--
+			col--
 		}
 	}
 }
