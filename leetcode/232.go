@@ -2,7 +2,7 @@ package leetcode
 
 import "algorithm/jz"
 
-// 232. Implement Queue using Stacks
+// Implement Queue using Stacks
 type TwoStackQueue struct {
 	jz.TwoStackQueue
 }

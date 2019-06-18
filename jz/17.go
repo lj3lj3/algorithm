@@ -2,6 +2,7 @@ package jz
 
 import "fmt"
 
+// 打印从1到最大的n位数
 func Print1ToMaxOfNDigits(n int) {
 	if n < 0 {
 		return
