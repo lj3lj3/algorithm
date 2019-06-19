@@ -6,7 +6,6 @@ import (
 )
 
 func TestMirror(t *testing.T) {
-	// construct link list
 	tests := []struct {
 		test *TreeNode
 		want *TreeNode

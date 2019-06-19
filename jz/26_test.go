@@ -5,7 +5,6 @@ import (
 )
 
 func TestHasSubtree(t *testing.T) {
-	// construct link list
 	tests := []struct {
 		test *TreeNode
 		tree *TreeNode

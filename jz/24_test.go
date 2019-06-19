@@ -6,7 +6,6 @@ import (
 )
 
 func TestReverseList(t *testing.T) {
-	// construct link list
 	tests := []struct {
 		test *LinkNode
 		want *LinkNode

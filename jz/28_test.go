@@ -5,7 +5,6 @@ import (
 )
 
 func TestIsSymmetric(t *testing.T) {
-	// construct link list
 	tests := []struct {
 		test *TreeNode
 		want bool

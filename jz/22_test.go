@@ -6,7 +6,6 @@ import (
 )
 
 func TestFindKthToTail(t *testing.T) {
-	// construct link list
 	tests := []struct {
 		test *LinkNode
 		k    int

@@ -15,11 +15,11 @@ func TestEntryNodeOfLoop(t *testing.T) {
 			linkNodes[i-1].next = linkNodes[i] // link it
 		}
 	}
-	// create a loop
+	// Create a loop
 	entry := 5
 	linkNodes[length-1].next = linkNodes[entry]
 
-	// Construct link list
+	// Construct linked list
 	tests := []struct {
 		test *LinkNode
 		want *LinkNode
