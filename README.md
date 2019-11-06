@@ -1,1 +1,1 @@
-### GO version of jz and LeetCode
+### GO version of algorithm
