@@ -16,10 +16,15 @@ func squareRootNewton(number int) float64 {
 	last := 0.0
 
 	// Loop
-	for math.Abs(val-last) > 1e-6 {
+	for math.Abs(val-last) > 1e-1 {
 		last = val // Save last value
 		val = (val + num/val) * 0.5
 	}
 
 	return val
+}
+
+// 快速开平方
+func squareRootFast(number int) float64 {
+	return 1 / reverseSquareRootFast(number)
 }
